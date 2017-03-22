@@ -1,15 +1,6 @@
 [0m[[0minfo[0m] [0m[32mSamsungSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mSamsung Actor [0m[0m
-[0m[[0minfo[0m] [0m[31m- must Reply with the unkown request it receives without ask *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Uknown Request[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:219)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.expectMsg_internal(TestKit.scala:387)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.expectMsg(TestKit.scala:364)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.expectMsg$(TestKit.scala:364)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:814)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at SamsungSpec.$anonfun$new$2(SamsungSpec.scala:20)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mA Validate [0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with Error message in case customer request to buy more than 1 item[0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with success message in case if stock is not empty[0m[0m
+[0m[[0minfo[0m] [0m[32mSamsung[0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with error message in case of unkown request[0m[0m

@@ -15,15 +15,16 @@ object SamsungCounter extends App {
       |}
     """.stripMargin
   )
-  var noOfItemsAvailable= 100
+
+ // var noOfItemsAvailable= 100
   val system = ActorSystem("RouterSystem",config)
 
   val router = system.actorOf(FromConfig.props(Props[PurchaseRequestHandler]),"poolRouter")
 
-
+  for(i <- 1 to 10)
   router ! (Customer("mahesh","Delhi",99999,971665049),1)
 
-  router ! (Customer("shivangi","UP",8888,886045160),2)
+  //router ! (Customer("shivangi","UP",8888,886045160),2)
 
 }
 

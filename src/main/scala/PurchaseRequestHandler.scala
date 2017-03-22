@@ -1,15 +1,19 @@
 import akka.actor.{Props, ActorRef, Actor}
 import akka.event.Logging
-
+import akka.util.Timeout
+import scala.concurrent.duration._
+import akka.pattern.ask
+import scala.concurrent.ExecutionContext.Implicits.global
 
 class PurchaseRequestHandler extends Actor{
 
   val log = Logging(context.system,this)
   val validate = context.actorOf(Props[Validate])
 
-  def receive = {
+  override def receive = {
 
     case (obj:Customer,num) => validate ! (obj , num)
+
   }
 
 }
@@ -17,5 +21,5 @@ class PurchaseRequestHandler extends Actor{
 
 object PurchaseRequestHandler {
 
-  def prop(ref: ActorRef):Props = Props(classOf[PurchaseRequestHandler],ref)
+  def prop:Props = Props(classOf[PurchaseRequestHandler])
 }
