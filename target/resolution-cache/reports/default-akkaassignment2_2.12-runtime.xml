@@ -6,8 +6,8 @@
 		module="akkaassignment2_2.12"
 		revision="1.0"
 		conf="runtime"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170322110527"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scoveragePlugin"
+		date="20170322173413"/>
 	<dependencies>
 		<module organisation="org.scalatest" name="scalatest_2.12">
 			<revision name="3.0.1" status="release" pubdate="20161110112252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">

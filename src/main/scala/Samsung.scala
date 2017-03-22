@@ -1,4 +1,4 @@
-import akka.actor.{Props, Actor}
+import akka.actor.{Actor, Props}
 import akka.event.Logging
 
 class Samsung extends Actor {
@@ -10,7 +10,7 @@ class Samsung extends Actor {
   def receive = {
 
     case obj: Customer => {
-
+      //log.info("purchase successful")
       log.info(obj.name)
     }
     case _ => log.info("Uknown Request")
@@ -20,5 +20,5 @@ class Samsung extends Actor {
 
 object Samsung {
 
-  def prop:Props = Props[Samsung]
+  def prop: Props = Props[Samsung]
 }

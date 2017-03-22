@@ -1,13 +1,13 @@
 [0m[[0minfo[0m] [0mUpdating {file:/home/knoldus/Desktop/AkkaAssignment2/}akkaassignment2...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#akkaassignment2_2.12;1.0[0m
-[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scoveragePlugin][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akkaassignment2_2.12;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akkaassignment2_2.12;1.0->org.scala-lang#scala-library;2.12.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.12.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a865863[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10426666[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.12.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.12.1] org.scala-lang#scala-library;2.12.1[0m
@@ -752,6 +752,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akkaassignment2_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akkaassignment2_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akkaassignment2_2.12;1.0->org.scala-lang#scala-library;2.12.1 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scoveragePlugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#akkaassignment2_2.12;1.0 [scoveragePlugin][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.1!scala-library.jar[0m
@@ -768,7 +770,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.1!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 641ms :: artifacts dl 18ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 669ms :: artifacts dl 21ms[0m
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 compile produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 runtime produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 test produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-test.xml[0m
@@ -782,5 +784,6 @@
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 docs produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 pom produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 scala-tool produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (641ms resolve - 18ms download)[0m
+[0m[[0mdebug[0m] [0m	report for default#akkaassignment2_2.12;1.0 scoveragePlugin produced in /home/knoldus/Desktop/AkkaAssignment2/target/resolution-cache/reports/default-akkaassignment2_2.12-scoveragePlugin.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (669ms resolve - 21ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

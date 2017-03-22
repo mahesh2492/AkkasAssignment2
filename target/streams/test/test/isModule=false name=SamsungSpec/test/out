@@ -1,6 +1,0 @@
-[0m[[0minfo[0m] [0m[32mSamsungSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mA Validate [0m[0m
-[0m[[0minfo[0m] [0m[32m- must respond with Error message in case customer request to buy more than 1 item[0m[0m
-[0m[[0minfo[0m] [0m[32m- must respond with success message in case if stock is not empty[0m[0m
-[0m[[0minfo[0m] [0m[32mSamsung[0m[0m
-[0m[[0minfo[0m] [0m[32m- must respond with error message in case of unkown request[0m[0m

@@ -1,18 +1,18 @@
-import akka.actor.{Props, ActorRef, Actor}
+import akka.actor.{Actor, Props}
 import akka.event.Logging
-import akka.util.Timeout
-import scala.concurrent.duration._
-import akka.pattern.ask
-import scala.concurrent.ExecutionContext.Implicits.global
 
-class PurchaseRequestHandler extends Actor{
+class PurchaseRequestHandler extends Actor {
 
-  val log = Logging(context.system,this)
+  val log = Logging(context.system, this)
   val validate = context.actorOf(Props[Validate])
 
   override def receive = {
 
-    case (obj:Customer,num) => validate ! (obj , num)
+    case (obj: Customer, num) => {
+     // sender ! "sending data to validate actor for validation"
+      validate !(obj, num)
+    }
+    case _ => log.info("unkown request")
 
   }
 
@@ -21,5 +21,5 @@ class PurchaseRequestHandler extends Actor{
 
 object PurchaseRequestHandler {
 
-  def prop:Props = Props(classOf[PurchaseRequestHandler])
+  def prop: Props = Props[PurchaseRequestHandler]
 }
